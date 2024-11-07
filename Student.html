@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.freepik.com/256/13171/13171269.png?ga=GA1.1.495278936.1730380946&semt=ais_hybrid">
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js" defer></script>
+    <h1 class="guest">Welcome : <span id="username"></span></h1>
+    </div>
+    <div class="de">
+        <ul class="select">
+            <a class="a" href="Login.html">Home</a>
+            <a class="a" href="Student.html">Student's Details</a>
+            <a class="a" href="Faculty.html">Faculty Details</a>
+            <a class="a" href="Semester1.html">Resources</a>
+            <a class="a" href="index.html">Log Out</a>
+        </ul>
+    </div>
+    <input type="text" id="searchBar" placeholder="Search..." class="search-bar">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Hello-->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const value = localStorage.getItem('myValue');
+        document.getElementById('username').textContent = value;
+    </script>
+</body>
+</html>

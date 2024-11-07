@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.freepik.com/256/14034/14034325.png?ga=GA1.1.495278936.1730380946&semt=ais_hybrid">
+</head>
+<body>
+    <link rel="stylesheet" href="css1.css">
+    <div class="dis">
+    <h1 id="head">Department of Computer Science</h1>
+    <h2 id="des">A.V.C. College of Engineering,<br>Mannampandal.</h2>
+    <h1 id="year">Year : 2023 - 2027</h1>
+    <h1 class="guest">Welcome : <span id="username"></span></h1>
+    </div>
+    <div class="de">
+        <ul class="select">
+            <a class="a" href="Login.html">Home</a>
+            <a class="a" href="Student.html">Student's Details</a>
+            <a class="a" href="Faculty.html">Faculty Details</a>
+            <a class="a" href="Semester1.html">Resources</a>    
+            <a class="a" href="index.html">Log Out</a>
+        </ul>
+    </div>
+    <div class="marq1">
+        <marquee id="mar" direction="down"></marquee>
+    </div>
+    <script src="scroll.js"></script>
+    <script>
+        const value = localStorage.getItem('myValue');
+        document.getElementById('username').textContent = value;
+    </script>
+    <a href="https://wa.me/+919894526212?text=*Welcome*" target="_blank" id="what">Contact me in WhatsApp<br>regarding any query or feedback</a>
+</body>
+</html>
